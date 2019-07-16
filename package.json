@@ -1,0 +1,17 @@
+{
+  "name": "singlepage",
+  "version": "1.0.0",
+  "description": "First try gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Malyuk",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "browsersync": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

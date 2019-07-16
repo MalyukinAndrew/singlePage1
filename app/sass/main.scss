@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #87509c;
+}
+
+.menu-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.menu a:hover{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.first-screen{
+    background-color: #87509c;
+}
+.first-screen h1{
+    font-size: 42px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+}
