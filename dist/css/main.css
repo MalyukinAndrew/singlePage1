@@ -11,6 +11,7 @@ header {
   background-color: #87509c; }
 
 .menu-wrap {
+  padding-top: 30px;
   display: flex;
   justify-content: space-between; }
 
@@ -31,11 +32,45 @@ header {
   border-radius: 10px; }
 
 .first-screen {
-  background-color: #87509c; }
+  background-color: #87509c;
+  text-align: center; }
 
 .first-screen h1 {
   font-size: 42px;
   margin: 0;
   text-align: center;
   color: white;
-  padding-top: 70px; }
+  padding-top: 150px; }
+
+.first-screen a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  background-color: #eb7d4b;
+  padding: 30px 80px;
+  display: inline-block;
+  margin-top: 65px;
+  margin-bottom: 150px;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 3px 0px rgba(200, 106, 64, 0.9); }
+
+.services {
+  background-color: #17c2a4; }
+  .services h2 {
+    position: relative;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase; }
+    .services h2:after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: -5px;
+      left: calc(50% - 45px);
+      width: 90px;
+      border-radius: 2px;
+      height: 3px;
+      background: rgba(20, 165, 140, 0.5); }
