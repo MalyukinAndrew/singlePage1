@@ -59,30 +59,51 @@ header{
 
 .services{
     background-color: #17c2a4;
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 130px;
     h2{
         position: relative;
         margin: 0;
         padding-top: 20px;
         text-align: center;
         font-size: 40px;
-        color: white;
         text-transform: uppercase;
-        
         $width: 90px;
         $leftOffset: $width/ 2;
         &:after{
             content:"";
             position: absolute;
             display: block;
-            bottom: -5px;
+            bottom: -20px;
             left: calc(50% - #{$leftOffset});
             width: $width;
             border-radius: 2px;
-            height: 3px;
+            height: 4px;
             background: rgba(#14a58c, .5);
             // transform: translate(-50%, 0);
         }
     }
-      
+    p{
+        text-align: center;
+        width: 600px;
+        font-size: 18px;
+        margin: 15px auto;
+        padding-top: 30px;
+    }      
 }
+.services-blocks{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 60px;
+}
+.service{
+    width: 33.33%;
+    display: block;
+}
+.service p{
+    width: 200px;
+}
+
 
