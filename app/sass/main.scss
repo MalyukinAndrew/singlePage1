@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .container{
     width: 100%;
@@ -84,10 +85,16 @@ header{
             // transform: translate(-50%, 0);
         }
     }
+    
+    h3{
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase; 
+    }
     p{
         text-align: center;
         width: 600px;
-        font-size: 18px;
+        font-size: 16px;
         margin: 15px auto;
         padding-top: 30px;
     }      
@@ -105,5 +112,68 @@ header{
 .service p{
     width: 200px;
 }
+.roundimg img{
+  object-fit: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
 
-
+.team{
+    background-color: #e7f1f8;
+    color: black;
+    padding-top: 120px;
+    padding-bottom: 130px;
+    h2{
+        position: relative;
+        margin: 0;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 40px;
+        text-transform: uppercase;
+        $width: 90px;
+        $leftOffset: $width/ 2;
+        &:after{
+            content:"";
+            position: absolute;
+            display: block;
+            bottom: -20px;
+            left: calc(50% - #{$leftOffset});
+            width: $width;
+            border-radius: 2px;
+            height: 4px;
+            background: rgba(#c8d9e5, .5);
+        }
+    }
+    h3{
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 5px; 
+    }
+    p{
+        text-align: center;
+        width: 600px;
+        font-size: 16px;
+        margin: 15px auto;
+        padding-top: 30px;
+    }      
+}
+.team-cards{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 60px;
+}
+.team-member{
+    width: 33.33%;
+    display: block;
+}
+.team-member p{
+    width: 200px;
+}
+.team-member span{
+    display: block;
+    color:#48c1e9;
+    font-size: 16px;
+}

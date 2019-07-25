@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
 
 .container {
   width: 100%;
@@ -76,10 +77,14 @@ header {
       border-radius: 2px;
       height: 4px;
       background: rgba(20, 165, 140, 0.5); }
+  .services h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase; }
   .services p {
     text-align: center;
     width: 600px;
-    font-size: 18px;
+    font-size: 16px;
     margin: 15px auto;
     padding-top: 30px; }
 
@@ -95,3 +100,61 @@ header {
 
 .service p {
   width: 200px; }
+
+.roundimg img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px; }
+
+.team {
+  background-color: #e7f1f8;
+  color: black;
+  padding-top: 120px;
+  padding-bottom: 130px; }
+  .team h2 {
+    position: relative;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase; }
+    .team h2:after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: -20px;
+      left: calc(50% - 45px);
+      width: 90px;
+      border-radius: 2px;
+      height: 4px;
+      background: rgba(200, 217, 229, 0.5); }
+  .team h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  .team p {
+    text-align: center;
+    width: 600px;
+    font-size: 16px;
+    margin: 15px auto;
+    padding-top: 30px; }
+
+.team-cards {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 60px; }
+
+.team-member {
+  width: 33.33%;
+  display: block; }
+
+.team-member p {
+  width: 200px; }
+
+.team-member span {
+  display: block;
+  color: #48c1e9;
+  font-size: 16px; }
