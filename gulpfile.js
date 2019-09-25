@@ -18,10 +18,17 @@ gulp.task('html', function () {
     return gulp.src('app/*.html')
         .pipe(gulp.dest('dist'))
 })
+
+gulp.task('js', function () {
+    return gulp.src('app/js/*.*')
+        .pipe(gulp.dest('dist/js'))
+})
+
 gulp.task('build', gulp.series(
     'sass',
     'images',
-    'html'
+    'html',
+    'js'
 ))
 
 gulp.task('serve', gulp.series('build', () => {
