@@ -149,7 +149,23 @@ header{
 }
 .service p{
     width: 200px;
+    padding: 0;
 }
+
+@media screen and (max-width:900px){
+    .services-blocks{
+        flex-flow:wrap;
+    }
+    .service{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .services{
+        padding-bottom: 90px;
+    }
+}
+
+
 .roundimg img{
   object-fit: cover;
   border-radius: 50%;
@@ -209,12 +225,28 @@ header{
 }
 .team-member p{
     width: 200px;
+    padding-top: 0;
 }
 .team-member span{
     display: block;
     color:#48c1e9;
     font-size: 16px;
 }
+
+@media screen and (max-width:900px){
+    .team-cards{
+        flex-flow: row wrap;
+    }
+    .team-member{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .team{
+        padding-bottom: 90px;
+    }
+}
+
+
 
 .skills{
     color: black;
@@ -309,6 +341,21 @@ header{
     }      
 }
 
+@media screen and (max-width:900px){
+    .skill-knobs{
+        flex-flow: wrap;
+    }
+    .skill{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    .skills{
+        padding-bottom: 90px;
+    }
+}
+
+
+
 .portfolio-imgs{
     display: flex;
     flex-flow: row wrap;
@@ -332,6 +379,8 @@ header{
     text-transform: uppercase;
     box-shadow: 0px 4px 3px 0px rgba(20, 165, 140,0.9);
 }
+
+
 
 .comments{
     background-color: #d74680;
@@ -504,17 +553,32 @@ header{
     box-shadow: 0px 4px 3px 0px rgba(41, 158, 197,0.9);
 }
 
+@media screen and (max-width:800px){
+    .contact_form{
+        width:500px;
+    }
+}
+@media screen and (max-width:650px){
+    .sectionp{
+        width:300px !important;
+    }
+    .footer li{
+        margin: 10px;
+    }
+}
+
+
 .footer{
     background-color: #273a71;
-    height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
+    padding:20px 0;
 }
 .footer a{
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
     font-size: 16px;
 }
 
@@ -526,5 +590,8 @@ header{
     margin: auto;
     display: flex;
     flex-direction: row;
+    flex-flow: wrap;
     justify-content: space-around;
+    padding: 0;
 }
+
