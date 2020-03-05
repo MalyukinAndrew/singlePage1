@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/responsive-menu.js"></script>
     <title>Cuda</title>
 </head>
 
@@ -18,7 +20,9 @@
                 <div class="logo">
                     <a href="#"><img src="img/logo.png" alt=""></a>
                 </div>
-                <nav class="menu">
+                <nav class="menu" id="menu">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i></a>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -201,8 +205,9 @@
                     <img src="img/PC4.png">
                     <h4>Isometric perspective mock-up</h4>
                 </div>
-                <a class="projects-btn" href="#">Load more projects</a>
+                <!-- <a class="projects-btn" href="#">Load more projects</a> -->
             </div>
+            <a class="projects-btn" href="#">Load more projects</a>
         </div>
     </div>
     <div class="comments">
@@ -213,7 +218,8 @@
                 <div class="comment">
                     <div class="photoandcommenttext">
                         <img src="img/iman.jpg" alt="">
-                        <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+                        <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu
+                            nisl scelerisque.”
                         </p>
                     </div>
                     <div class="sendername">
@@ -223,7 +229,8 @@
                 <div class="comment">
                     <div class="photoandcommenttext">
                         <img src="img/lima.jpg" alt="">
-                        <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+                        <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis
+                            porta.”
                         </p>
                     </div>
                     <div class="sendername">
@@ -233,7 +240,8 @@
                 <div class="comment">
                     <div class="photoandcommenttext">
                         <img src="img/hathaway.jpg" alt="">
-                        <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+                        <p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis
+                            porta.”
                         </p>
                     </div>
                     <div class="sendername">
@@ -243,7 +251,8 @@
                 <div class="comment">
                     <div class="photoandcommenttext">
                         <img src="img/stone.jpg" alt="">
-                        <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+                        <p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu
+                            nisl scelerisque.”
                         </p>
                     </div>
                     <div class="sendername">
@@ -253,6 +262,51 @@
             </div>
         </div>
     </div>
+    <div class="contacts">
+        <div class="container">
+            <h2>Get in touch</h2>
+            <p>Lorem ipsum doloulpa nulla numquam fuga? Praesentium itaque numquam asperio</p>
+            <form class="contact_form" method="POST">
+                <div class="input-row">
+                    <input class="name" type="text" placeholder="Name">
+                    <input class="email" type="text" placeholder="E-mail">
+                </div>
+                <div class="message-div">
+                    <textarea class="message" name="" id="" cols="30" rows="10" placeholder="Your text here"></textarea>
+                </div>
+                <a class="contact-btn" href="#">Send message</a>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="center-footer">
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Google+</a>
+                    </li>
+                    <li>
+                        <a href="#">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="#">Behance</a>
+                    </li>
+                    <li>
+                        <a href="#">Dribble</a>
+                    </li>
+                    <li>
+                        <a href="#">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="js/jquery.knob.min.js"></script>

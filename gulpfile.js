@@ -33,6 +33,7 @@ gulp.task('build', gulp.series(
 
 gulp.task('serve', gulp.series('build', () => {
     browserSync.init({ server: "dist" });
+    gulp.watch("app/js/*.js", gulp.series('js'))
     gulp.watch("app/sass/*.scss", gulp.series('sass'));
     gulp.watch("app/img/*.*", gulp.series('images'));
     gulp.watch("app/*.html", gulp.series('html')).on('change', browserSync.reload);
