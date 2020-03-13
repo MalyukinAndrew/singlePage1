@@ -12,6 +12,9 @@ body{
 header{
     background-color: #87509c;
 }
+.logo{
+    padding-left: 15px;
+}
 
 .menu-wrap{
     padding-top: 30px;
@@ -185,11 +188,31 @@ header{
 }
 
 
-.roundimg img{
-  object-fit: cover;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+// .roundimg img{
+//   object-fit: cover;
+//   border-radius: 50%;
+//   width: 200px;
+//   height: 200px;
+// }
+.roundimg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.backimg1{
+    background-image: url(../img/hathaway.jpg);
+}
+.backimg2{
+    background-image: url(../img/upton.jpg);
+}
+.backimg3{
+    background-image: url(../img/wilde.jpg);
+}
+.backimg4{
+    background-image: url(../img/greene.jpg);
 }
 
 .team{
@@ -471,12 +494,28 @@ header{
     }     
 }
 
-.photoandcommenttext img{
-    object-fit: cover;
-    border-radius: 50%;
+.commentphoto{
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    flex-shrink: 0;
 }
+.comphoto1{
+    background-image: url(../img/iman.jpg);
+}
+.comphoto2{
+    background-image: url(../img/lima.jpg);
+}
+.comphoto3{
+    background-image: url(../img/hathaway.jpg);
+}
+.comphoto4{
+    background-image: url(../img/stone.jpg);
+}
+
 .photoandcommenttext{
     display: flex;
     width: 500px;
