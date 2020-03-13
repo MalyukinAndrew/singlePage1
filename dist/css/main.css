@@ -86,6 +86,10 @@ header {
   text-transform: uppercase;
   box-shadow: 0px 4px 3px 0px rgba(200, 106, 64, 0.9); }
 
+@media screen and (max-width: 600px) {
+  .first-screen h1 {
+    font-size: 32px; } }
+
 .services {
   background-color: #17c2a4;
   color: white;
@@ -141,6 +145,16 @@ header {
     margin-bottom: 50px; }
   .services {
     padding-bottom: 90px; } }
+
+@media screen and (max-width: 600px) {
+  .services-blocks {
+    flex-flow: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center; }
+  .service {
+    width: 100%; } }
 
 .roundimg img {
   object-fit: cover;
@@ -210,6 +224,13 @@ header {
   .team {
     padding-bottom: 90px; } }
 
+@media screen and (max-width: 600px) {
+  .team-cards {
+    flex-direction: column;
+    align-items: center; }
+  .team-member {
+    width: 100%; } }
+
 .skills {
   color: black;
   padding-top: 120px;
@@ -253,6 +274,22 @@ header {
   width: 33.33%;
   display: block; }
 
+@media screen and (max-width: 900px) {
+  .skill-knobs {
+    flex-flow: row wrap; }
+  .skill {
+    width: 50%;
+    margin-bottom: 50px; }
+  .skills {
+    padding-bottom: 90px; } }
+
+@media screen and (max-width: 600px) {
+  .skill-knobs {
+    flex-direction: column;
+    align-items: center; }
+  .skill {
+    width: 100%; } }
+
 .portfolio {
   background-color: #ffdd99;
   color: black;
@@ -288,15 +325,6 @@ header {
     margin: 15px auto;
     padding-top: 30px; }
 
-@media screen and (max-width: 900px) {
-  .skill-knobs {
-    flex-flow: wrap; }
-  .skill {
-    width: 50%;
-    margin-bottom: 50px; }
-  .skills {
-    padding-bottom: 90px; } }
-
 .portfolio-imgs {
   display: flex;
   flex-flow: row wrap;
@@ -318,6 +346,10 @@ header {
   margin-bottom: 100px;
   text-transform: uppercase;
   box-shadow: 0px 4px 3px 0px rgba(20, 165, 140, 0.9); }
+
+@media screen and (max-width: 600px) {
+  .projects-btn {
+    padding: 20px 50px; } }
 
 .comments {
   background-color: #d74680;
@@ -364,7 +396,6 @@ header {
 
 .photoandcommenttext {
   display: flex;
-  flex: row;
   width: 500px;
   align-items: center; }
   .photoandcommenttext p {
@@ -382,6 +413,24 @@ header {
 .sendername {
   margin-bottom: 20px;
   margin-left: 120px; }
+
+@media screen and (max-width: 768px) {
+  .photoandcommenttext {
+    width: 400px; } }
+
+@media screen and (max-width: 500px) {
+  .photoandcommenttext {
+    flex-direction: column;
+    width: 310px; }
+  .photoandcommenttext p {
+    margin-left: 0;
+    width: 310px; }
+  .sendername {
+    margin-left: 0; }
+  .comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 .contacts {
   background-color: #3c5499;
@@ -473,6 +522,16 @@ header {
 @media screen and (max-width: 800px) {
   .contact_form {
     width: 500px; } }
+
+@media screen and (max-width: 768px) {
+  .contact_form {
+    width: 250px; }
+  .contact-btn {
+    padding: 20px 40px; }
+  .contacts {
+    padding-bottom: 90px; }
+  .portfolio img {
+    width: 300px; } }
 
 @media screen and (max-width: 650px) {
   .sectionp {
