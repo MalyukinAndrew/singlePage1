@@ -68,14 +68,14 @@ header {
 
 .first-screen {
   background-color: #87509c;
-  text-align: center; }
+  text-align: center;
+  padding: 140px 0; }
 
 .first-screen h1 {
   font-size: 42px;
   margin: 0;
   text-align: center;
-  color: white;
-  padding-top: 150px; }
+  color: white; }
 
 .first-screen a {
   text-decoration: none;
@@ -85,19 +85,19 @@ header {
   padding: 30px 80px;
   display: inline-block;
   margin-top: 65px;
-  margin-bottom: 150px;
   text-transform: uppercase;
   box-shadow: 0px 4px 3px 0px rgba(200, 106, 64, 0.9); }
 
 @media screen and (max-width: 600px) {
   .first-screen h1 {
-    font-size: 32px; } }
+    font-size: 32px; }
+  .first-screen {
+    padding: 100px 0; } }
 
 .services {
   background-color: #17c2a4;
   color: white;
-  padding-top: 120px;
-  padding-bottom: 130px; }
+  padding: 130px 0; }
   .services h2 {
     position: relative;
     margin: 0;
@@ -157,7 +157,9 @@ header {
     text-align: center;
     align-items: center; }
   .service {
-    width: 100%; } }
+    width: 100%; }
+  .services {
+    padding: 80px 0; } }
 
 .roundimg {
   width: 200px;
@@ -182,8 +184,7 @@ header {
 .team {
   background-color: #e7f1f8;
   color: black;
-  padding-top: 120px;
-  padding-bottom: 130px; }
+  padding: 130px 0; }
   .team h2 {
     position: relative;
     margin: 0;
@@ -246,12 +247,13 @@ header {
     flex-direction: column;
     align-items: center; }
   .team-member {
-    width: 100%; } }
+    width: 100%; }
+  .team {
+    padding: 80px 0; } }
 
 .skills {
   color: black;
-  padding-top: 120px;
-  padding-bottom: 130px; }
+  padding: 130px 0; }
   .skills h2 {
     position: relative;
     margin: 0;
@@ -305,13 +307,14 @@ header {
     flex-direction: column;
     align-items: center; }
   .skill {
-    width: 100%; } }
+    width: 100%; }
+  .skills {
+    padding: 80px 0; } }
 
 .portfolio {
   background-color: #ffdd99;
   color: black;
-  padding-top: 120px;
-  padding-bottom: 130px;
+  padding: 130px 0;
   text-align: center; }
   .portfolio h2 {
     position: relative;
@@ -366,13 +369,14 @@ header {
 
 @media screen and (max-width: 600px) {
   .projects-btn {
-    padding: 20px 50px; } }
+    padding: 20px 50px; }
+  .portfolio {
+    padding: 80px 0; } }
 
 .comments {
   background-color: #d74680;
   color: white;
-  padding-top: 120px;
-  padding-bottom: 130px; }
+  padding: 130px 0; }
   .comments h2 {
     position: relative;
     margin: 0;
@@ -450,6 +454,10 @@ header {
   .photoandcommenttext {
     width: 400px; } }
 
+@media screen and (max-width: 600px) {
+  .comments {
+    padding: 80px 0; } }
+
 @media screen and (max-width: 500px) {
   .photoandcommenttext {
     flex-direction: column;
@@ -467,8 +475,7 @@ header {
 .contacts {
   background-color: #3c5499;
   color: white;
-  padding-top: 120px;
-  padding-bottom: 130px; }
+  padding: 130px 0; }
   .contacts h2 {
     position: relative;
     margin: 0;
@@ -569,7 +576,9 @@ header {
   .sectionp {
     width: 300px !important; }
   .footer li {
-    margin: 10px; } }
+    margin: 10px; }
+  .contacts {
+    padding: 80px 0; } }
 
 .footer {
   background-color: #273a71;

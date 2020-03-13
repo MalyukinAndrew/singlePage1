@@ -79,13 +79,13 @@ header{
 .first-screen{
     background-color: #87509c;
     text-align: center;
+    padding: 140px 0;
 }
 .first-screen h1{
     font-size: 42px;
     margin: 0;
     text-align: center;
     color: white;
-    padding-top: 150px;
 }
 .first-screen a{
     text-decoration: none;
@@ -95,7 +95,6 @@ header{
     padding: 30px 80px;
     display: inline-block;
     margin-top: 65px;
-    margin-bottom: 150px;
     text-transform: uppercase;
     box-shadow: 0px 4px 3px 0px rgba(200,106,64,0.9);
 }
@@ -104,13 +103,15 @@ header{
     .first-screen h1{
         font-size: 32px;
     }
+    .first-screen{
+        padding: 100px 0;
+    }
 }
 
 .services{
     background-color: #17c2a4;
     color: white;
-    padding-top: 120px;
-    padding-bottom: 130px;
+    padding: 130px 0;
     h2{
         position: relative;
         margin: 0;
@@ -185,15 +186,11 @@ header{
     .service{
         width: 100%;
     }
+    .services{
+        padding: 80px 0;
+    }
 }
 
-
-// .roundimg img{
-//   object-fit: cover;
-//   border-radius: 50%;
-//   width: 200px;
-//   height: 200px;
-// }
 .roundimg{
     width: 200px;
     height: 200px;
@@ -218,8 +215,7 @@ header{
 .team{
     background-color: #e7f1f8;
     color: black;
-    padding-top: 120px;
-    padding-bottom: 130px;
+    padding: 130px 0;
     h2{
         position: relative;
         margin: 0;
@@ -296,13 +292,15 @@ header{
     .team-member{
         width:100%;
     }
+    .team{
+        padding: 80px 0;
+    }
 }
 
 
 .skills{
     color: black;
-    padding-top: 120px;
-    padding-bottom: 130px;
+    padding: 130px 0;
     h2{
         position: relative;
         margin: 0;
@@ -372,13 +370,15 @@ header{
     .skill{
         width: 100%;
     }
+    .skills{
+        padding: 80px 0;
+    }
 }
 
 .portfolio{
     background-color: #ffdd99;
     color: black;
-    padding-top: 120px;
-    padding-bottom: 130px;
+    padding: 130px 0;
     text-align: center;
     h2{
         position: relative;
@@ -446,14 +446,16 @@ header{
     .projects-btn{
         padding: 20px 50px;
     }
+    .portfolio{
+        padding: 80px 0;
+    }
 }
 
 
 .comments{
     background-color: #d74680;
     color: white;
-    padding-top: 120px;
-    padding-bottom: 130px;
+    padding: 130px 0;
     h2{
         position: relative;
         margin: 0;
@@ -544,6 +546,12 @@ header{
     }
 }
 
+@media screen and (max-width:600px){
+    .comments{
+        padding: 80px 0;
+    }
+}
+
 @media screen and (max-width:500px){
     .photoandcommenttext{
         flex-direction: column;
@@ -566,8 +574,7 @@ header{
 .contacts{
     background-color: #3c5499;
     color: white;
-    padding-top: 120px;
-    padding-bottom: 130px;
+    padding: 130px 0;
     h2{
         position: relative;
         margin: 0;
@@ -654,7 +661,6 @@ header{
     padding: 30px 80px;
     display: inline-block;
     margin-top: 65px;
-    // margin-bottom: 100px;
     text-transform: uppercase;
     box-shadow: 0px 4px 3px 0px rgba(41, 158, 197,0.9);
 }
@@ -686,8 +692,10 @@ header{
     .footer li{
         margin: 10px;
     }
+    .contacts{
+        padding: 80px 0;
+    }
 }
-
 
 
 .footer{
