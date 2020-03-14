@@ -6,13 +6,12 @@ body {
 .container {
   width: 100%;
   max-width: 1140px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 10px; }
 
 header {
   background-color: #87509c; }
-
-.logo {
-  padding-left: 15px; }
 
 .menu-wrap {
   padding-top: 30px;
@@ -461,10 +460,10 @@ header {
 @media screen and (max-width: 500px) {
   .photoandcommenttext {
     flex-direction: column;
-    width: 310px; }
+    width: 300px; }
   .photoandcommenttext p {
-    margin-left: 0;
-    width: 310px; }
+    margin: 0;
+    width: 290px; }
   .sendername {
     margin-left: 0; }
   .comment {
@@ -518,7 +517,7 @@ header {
   color: white; }
 
 .contact_form {
-  width: 700px;
+  max-width: 700px;
   text-align: center;
   align-items: center;
   margin: 50px auto; }
@@ -558,13 +557,7 @@ header {
   text-transform: uppercase;
   box-shadow: 0px 4px 3px 0px rgba(41, 158, 197, 0.9); }
 
-@media screen and (max-width: 800px) {
-  .contact_form {
-    width: 500px; } }
-
 @media screen and (max-width: 768px) {
-  .contact_form {
-    width: 250px; }
   .contact-btn {
     padding: 20px 40px; }
   .contacts {
@@ -578,7 +571,17 @@ header {
   .footer li {
     margin: 10px; }
   .contacts {
-    padding: 80px 0; } }
+    padding: 80px 0; }
+  .input-row {
+    width: 100%;
+    flex-direction: column; }
+    .input-row .email {
+      margin: 20px 0 0 0;
+      width: 100%;
+      box-sizing: border-box; }
+    .input-row .name {
+      width: 100%;
+      box-sizing: border-box; } }
 
 .footer {
   background-color: #273a71;
