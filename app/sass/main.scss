@@ -66,13 +66,18 @@ header{
         text-align: center;
     }
     .responsive.menu ul{
-        position: absolute;
+        position: fixed;
         display: block;
         text-align: center;
         width: 100%;
         top: 75px;
         right: 0;
         background-color: rgba(215, 44, 44, 0.8);
+        padding: 0px;
+        transition: 0.5s ease;
+    }
+    .container.menu.responsive ul{
+        box-sizing: content-box;
     }
 }
 
