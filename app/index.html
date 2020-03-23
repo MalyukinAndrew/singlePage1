@@ -35,12 +35,12 @@
                 <nav class="menu" id="menu">
                     <a href="javascript:void(0);" class="icon" onclick="responsiveMenuToggle()">
                         <i class="fa fa-bars"></i></a>
-                    <ul>
-                        <li><a href="#home" onclick="responsiveMenuToggleCheck()">Home</a></li>
-                        <li><a href="#about" onclick="responsiveMenuToggleCheck()">About</a></li>
-                        <li><a href="#work" onclick="responsiveMenuToggleCheck()">Work</a></li>
-                        <li><a href="#blog" onclick="responsiveMenuToggleCheck()">Blog</a></li>
-                        <li><a href="#contact" onclick="responsiveMenuToggleCheck()">Contact</a></li>
+                    <ul onclick="responsiveMenuToggleCheck()">
+                        <li><a class="nav-link" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
+                        <li><a class="nav-link" href="#work">Work</a></li>
+                        <li><a class="nav-link" href="#blog">Blog</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -318,5 +318,6 @@
 
 <script src="js/jquery.knob.min.js"></script>
 <script type="text/javascript" src="js/responsive-menu.js"></script>
+
 
 </html>
