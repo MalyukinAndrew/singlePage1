@@ -65,6 +65,9 @@ header{
         padding: 10px;
         text-align: center;
     }
+    .responsive.menu ul li a{
+        display: block;
+    }
     .responsive.menu ul{
         position: fixed;
         display: block;
