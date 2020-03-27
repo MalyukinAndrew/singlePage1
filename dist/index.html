@@ -273,15 +273,16 @@
         <div class="container">
             <h2>Get in touch</h2>
             <p class="sectionp">Lorem ipsum doloulpa nulla numquam fuga? Praesentium itaque numquam asperio</p>
-            <form class="contact_form" method="POST">
+            <form id="contact-form" class="contact-form" action="submit">
                 <div class="input-row">
-                    <input class="name" type="text" placeholder="Name">
-                    <input class="email" type="text" placeholder="E-mail">
+                    <input class="name" name="name" type="text" placeholder="Name" required>
+                    <input class="email" name="email" type="text" placeholder="E-mail" required>
                 </div>
                 <div class="message-div">
-                    <textarea class="message" name="" id="" cols="30" rows="10" placeholder="Your text here"></textarea>
+                    <textarea class="message" name="message" id="" cols="30" rows="10" placeholder="Your text here"
+                        required></textarea>
                 </div>
-                <a class="contact-btn" href="#">Send message</a>
+                <button class="contact-btn" type="submit">Send message</button>
             </form>
         </div>
     </div>
@@ -318,6 +319,18 @@
 
 <script src="js/jquery.knob.min.js"></script>
 <script type="text/javascript" src="js/responsive-menu.js"></script>
+<script>
+    $('#contact-form').submit(function (e) {
+        e.preventDefault();
+        var data = $('#contact-form').serializeArray();
+        var myJson = {};
+        $.each(data, function () {
+            myJson[this.name] = this.value;
+        });
+        console.log(myJson);
+    })
+
+</script>
 
 
 </html>
