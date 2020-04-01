@@ -625,8 +625,12 @@ header{
         padding-top: 30px;
     } 
 }
+.input-col{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 .name{
-    width:50%;
     background-color: #273a71;
     height: 30px;
     border: none;
@@ -650,7 +654,6 @@ header{
 }
 .email{
     margin-left: 20px;
-    width:50%;
     background-color: #273a71;
     height: 30px;
     border: none;
@@ -710,6 +713,9 @@ header{
     .contacts{
         padding: 80px 0;
     }
+    .input-col{
+        width: 100%;
+    }
     .input-row{
         width: 100%;
         flex-direction: column;
@@ -724,7 +730,9 @@ header{
         }
     }
 }
-
+#message-error, #email-error, #name-error{
+    color: red;
+}
 
 .footer{
     background-color: #273a71;
