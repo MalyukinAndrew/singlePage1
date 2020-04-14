@@ -95,15 +95,17 @@ header{
     text-align: center;
     color: white;
 }
-.work-btn{
+.btn{
     text-decoration: none;
     color: white;
     font-size: 18px;
-    background-color: #eb7d4b;
     padding: 30px 80px;
     display: inline-block;
     margin-top: 65px;
     text-transform: uppercase;
+}
+.work-btn{
+    background-color: #eb7d4b;
     box-shadow: 0px 4px 3px 0px rgba(200,106,64,0.9);
 }
 .work-btn:hover{
@@ -119,10 +121,7 @@ header{
     }
 }
 
-.services{
-    background-color: #17c2a4;
-    color: white;
-    padding: 130px 0;
+.section{
     h2{
         position: relative;
         margin: 0;
@@ -141,11 +140,19 @@ header{
             width: $width;
             border-radius: 2px;
             height: 4px;
-            background: rgba(#14a58c, .5);
-            // transform: translate(-50%, 0);
         }
     }
-    
+}
+
+.services{
+    background-color: #17c2a4;
+    color: white;
+    padding: 130px 0;
+    h2{
+        &:after{
+            background: rgba(#14a58c, .5);
+        }
+    }    
     h3{
         font-size: 24px;
         font-weight: bold;
@@ -159,26 +166,26 @@ header{
         padding-top: 30px;
     }      
 }
-.services-blocks{
+.services__row{
     display: flex;
     flex-direction: row;
     text-align: center;
     margin-top: 60px;
 }
-.service{
+.services__column{
     width: 33.33%;
     display: block;
-}
-.service p{
+    p{
     width: 200px;
     padding: 0;
+    }
 }
 
 @media screen and (max-width:900px){
-    .services-blocks{
+    .services__row{
         flex-flow:wrap;
     }
-    .service{
+    .services__column{
         width: 50%;
         margin-bottom: 50px;
     }
@@ -187,14 +194,14 @@ header{
     }
 }
 @media screen and (max-width:600px){
-    .services-blocks{
+    .services__row{
         flex-flow:wrap;
         flex-direction: column;
         margin: 0 auto;
         text-align: center;
         align-items: center;
     }
-    .service{
+    .services__column{
         width: 100%;
     }
     .services{
@@ -228,23 +235,7 @@ header{
     color: black;
     padding: 130px 0;
     h2{
-        position: relative;
-        margin: 0;
-        padding-top: 20px;
-        text-align: center;
-        font-size: 40px;
-        text-transform: uppercase;
-        $width: 90px;
-        $leftOffset: $width/ 2;
         &:after{
-            content:"";
-            position: absolute;
-            display: block;
-            bottom: -20px;
-            left: calc(50% - #{$leftOffset});
-            width: $width;
-            border-radius: 2px;
-            height: 4px;
             background: rgba(#c8d9e5, .5);
         }
     }
@@ -262,31 +253,31 @@ header{
         padding-top: 30px;
     }      
 }
-.team-cards{
+.team__cards{
     display: flex;
     flex-direction: row;
     text-align: center;
     margin-top: 60px;
 }
-.team-member{
+.team__member{
     width: 33.33%;
     display: block;
-}
-.team-member p{
-    width: 200px;
-    padding-top: 0;
-}
-.team-member span{
-    display: block;
+    p{
+        width: 200px;
+        padding-top: 0;
+    }
+    span{
+        display: block;
     color:#48c1e9;
     font-size: 16px;
+    }
 }
 
 @media screen and (max-width:900px){
-    .team-cards{
+    .team__cards{
         flex-flow: row wrap;
     }
-    .team-member{
+    .team__member{
         width: 50%;
         margin-bottom: 50px;
     }
@@ -296,11 +287,11 @@ header{
 }
 
 @media screen and (max-width:600px){
-    .team-cards{
+    .team__cards{
         flex-direction: column;
         align-items: center;
     }
-    .team-member{
+    .team__member{
         width:100%;
     }
     .team{
@@ -313,23 +304,7 @@ header{
     color: black;
     padding: 130px 0;
     h2{
-        position: relative;
-        margin: 0;
-        padding-top: 20px;
-        text-align: center;
-        font-size: 40px;
-        text-transform: uppercase;
-        $width: 90px;
-        $leftOffset: $width/ 2;
         &:after{
-            content:"";
-            position: absolute;
-            display: block;
-            bottom: -20px;
-            left: calc(50% - #{$leftOffset});
-            width: $width;
-            border-radius: 2px;
-            height: 4px;
             background: rgba(#c8d9e5, .5);
         }
     }
@@ -348,22 +323,22 @@ header{
     }      
 }
 
-.skill-knobs{
+.skills__knobs{
     display: flex;
     flex-direction: row;
     text-align: center;
     margin-top: 60px;
 }
-.skill{
+.skills__skill{
     width: 33.33%;
     display: block;
 }
 
 @media screen and (max-width:900px){
-    .skill-knobs{
+    .skills__knobs{
         flex-flow:row wrap;
     }
-    .skill{
+    .skills__skill{
         width: 50%;
         margin-bottom: 50px;
     }
@@ -374,11 +349,11 @@ header{
 
 
 @media screen and (max-width:600px){
-    .skill-knobs{
+    .skills__knobs{
         flex-direction: column;
         align-items: center;
     }
-    .skill{
+    .skills__skill{
         width: 100%;
     }
     .skills{
@@ -392,23 +367,7 @@ header{
     padding: 130px 0;
     text-align: center;
     h2{
-        position: relative;
-        margin: 0;
-        padding-top: 20px;
-        text-align: center;
-        font-size: 40px;
-        text-transform: uppercase;
-        $width: 90px;
-        $leftOffset: $width/ 2;
         &:after{
-            content:"";
-            position: absolute;
-            display: block;
-            bottom: -20px;
-            left: calc(50% - #{$leftOffset});
-            width: $width;
-            border-radius: 2px;
-            height: 4px;
             background: rgba(#e5c37f, .5);
         }
     }
@@ -429,27 +388,19 @@ header{
 
 
 
-.portfolio-imgs{
+.portfolio__imgs{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
-.portfolio-item{
+.portfolio__item{
     display: block;
     text-align: center;
     margin-top: 60px;
 }
 
 .projects-btn{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
     background-color: #17c2a4;
-    padding: 30px 80px;
-    display: inline-block;
-    margin-top: 65px;
-    margin-bottom: 100px;
-    text-transform: uppercase;
     box-shadow: 0px 4px 3px 0px rgba(20, 165, 140,0.9);
 }
 .projects-btn:hover{
@@ -471,23 +422,7 @@ header{
     color: white;
     padding: 130px 0;
     h2{
-        position: relative;
-        margin: 0;
-        padding-top: 20px;
-        text-align: center;
-        font-size: 40px;
-        text-transform: uppercase;
-        $width: 90px;
-        $leftOffset: $width/ 2;
         &:after{
-            content:"";
-            position: absolute;
-            display: block;
-            bottom: -20px;
-            left: calc(50% - #{$leftOffset});
-            width: $width;
-            border-radius: 2px;
-            height: 4px;
             background: rgba(#b73c6d, .5);
         }
     }
@@ -532,7 +467,7 @@ header{
     background-image: url(../img/stone.jpg);
 }
 
-.photoandcommenttext{
+.comments__photo-wrap{
     display: flex;
     width: 500px;
     align-items: center;
@@ -544,7 +479,7 @@ header{
         text-align: left;
     }
 }
-.comments-items{
+.comments__items{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -555,7 +490,7 @@ header{
         margin-left: 120px;
 }
 @media screen and (max-width:768px){
-    .photoandcommenttext{
+    .comments__photo-wrap{
         width: 400px;
     }
 }
@@ -567,18 +502,18 @@ header{
 }
 
 @media screen and (max-width:500px){
-    .photoandcommenttext{
+    .comments__photo-wrap{
         flex-direction: column;
         width: 300px;
-    }
-    .photoandcommenttext p{
-        margin: 0;
-        width: 290px;
+        p{
+            margin: 0;
+            width: 290px;
+        }
     }
     .sendername{
         margin-left: 0;
     }
-    .comment{
+    .comments__comment{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -590,25 +525,8 @@ header{
     color: white;
     padding: 130px 0;
     h2{
-        position: relative;
-        margin: 0;
-        padding-top: 20px;
-        text-align: center;
-        font-size: 40px;
-        text-transform: uppercase;
-        $width: 90px;
-        $leftOffset: $width/ 2;
         &:after{
-            content:"";
-            position: absolute;
-            display: block;
-            bottom: -20px;
-            left: calc(50% - #{$leftOffset});
-            width: $width;
-            border-radius: 2px;
-            height: 4px;
             background: rgba(#273a71, .5);
-            // transform: translate(-50%, 0);
         }
     }
     h3{
@@ -648,7 +566,7 @@ header{
     margin: 50px auto;
     color: white;
 }
-.input-row{
+.contact-form__input-row{
     display: flex;
     justify-content: space-between;
 }
@@ -675,14 +593,7 @@ header{
     color: white;
 }
 .contact-btn{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
     background-color: #30bae7;
-    padding: 30px 80px;
-    display: inline-block;
-    margin-top: 65px;
-    text-transform: uppercase;
     box-shadow: 0px 4px 3px 0px rgba(41, 158, 197,0.9);
     border: none;
 }
@@ -704,7 +615,7 @@ header{
     
 }
 @media screen and (max-width:650px){
-    .sectionp{
+    .section__subtitle{
         width:300px !important;
     }
     .footer li{
@@ -716,7 +627,7 @@ header{
     .input-col{
         width: 100%;
     }
-    .input-row{
+    .contact-form__input-row{
         width: 100%;
         flex-direction: column;
         .email{
@@ -731,7 +642,7 @@ header{
     }
 }
 #message-error, #email-error, #name-error{
-    color: red;
+    color: #f44336;
 }
 
 .footer{
